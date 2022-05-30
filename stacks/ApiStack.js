@@ -15,6 +15,7 @@ export function ApiStack({ stack, app }) {
             },
         },
         routes: {
+            "GET /notes": "functions/list.main",
             "GET /notes/{id}": "functions/get.main",
             "POST /notes": "functions/create.main",
         }
